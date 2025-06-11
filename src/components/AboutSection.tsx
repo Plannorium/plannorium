@@ -72,6 +72,7 @@ const approachData = [
 export default function AboutSection() {
   return (
     <motion.section
+      id="about" // Added ID for navbar link targeting
       className="py-20 bg-gradient-to-r from-black to-zinc-800 text-white relative overflow-hidden"
       variants={sectionVariants}
       initial="hidden"

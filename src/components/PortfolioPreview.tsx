@@ -33,7 +33,10 @@ const dummyProjects = [
 
 export default function PortfolioPreview() {
   return (
-    <section className="py-20 bg-gradient-to-r from-black to-zinc-800 relative overflow-hidden">
+    <section
+      id="portfolio" // Added ID for navbar link targeting
+      className="py-20 bg-gradient-to-r from-black to-zinc-800 relative overflow-hidden"
+    >
       <div className="absolute inset-0 bg-gradient-to-r from-gray-900 to-gray-700 opacity-30 animate-pulse" />
       <div className="max-w-7xl mx-auto px-6 relative z-10">
         <h2 className="text-4xl font-bold mb-10 text-white text-center">

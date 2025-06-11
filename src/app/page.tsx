@@ -1,5 +1,6 @@
 import AboutSection from "@/components/AboutSection";
 import Hero from "@/components/Hero";
+import ContactUs from "@/components/ContactUs"; // Import ContactUs
 import OurProcess from "@/components/OurProcess";
 import PortfolioPreview from "@/components/PortfolioPreview";
 import Services from "@/components/Services";
@@ -14,6 +15,7 @@ export default function Home() {
       <WhyTrustUsSection />
       <OurProcess />
       <AboutSection />
+      <ContactUs />
     </main>
   );
 }

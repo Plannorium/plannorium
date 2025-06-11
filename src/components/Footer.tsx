@@ -1,6 +1,7 @@
 "use client";
 
 import { Linkedin, Instagram, Twitter, Mail } from "lucide-react";
+import Link from "next/link";
 
 export default function Footer() {
   return (
@@ -12,27 +13,21 @@ export default function Footer() {
           professionalism, and human-centered design.
         </p>
         <div className="mb-8 space-x-4 sm:space-x-6">
-          <a
+          <Link
             href="/privacy"
             className="text-gray-300 hover:text-white text-sm transition-colors duration-200"
           >
             Privacy Policy
-          </a>
-          <a
+          </Link>
+          <Link
             href="/terms"
             className="text-gray-300 hover:text-white text-sm transition-colors duration-200"
           >
             Terms of Service
-          </a>
-          <a
-            href="/contact"
-            className="text-gray-300 hover:text-white text-sm transition-colors duration-200"
-          >
-            Contact Us
-          </a>
+          </Link>
         </div>
         <div className="flex justify-center space-x-6 mb-8">
-          <a
+          <Link
             href="https://linkedin.com/company/plannorium" // Replace with your actual LinkedIn URL
             target="_blank"
             rel="noopener noreferrer"
@@ -40,7 +35,7 @@ export default function Footer() {
             className="text-gray-400 hover:text-white transition-colors duration-200"
           >
             <Linkedin className="w-6 h-6" />
-          </a>
+          </Link>
           <a
             href="https://instagram.com/plannorium" // Replace with your actual Instagram URL
             target="_blank"

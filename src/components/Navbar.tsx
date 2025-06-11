@@ -19,7 +19,7 @@ export default function Navbar() {
   return (
     <motion.nav
       className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${
-        scrolled ? "bg-white shadow-md" : "bg-transparent"
+        scrolled ? "bg-zinc-800 shadow-lg" : "bg-transparent"
       }`}
       initial={{ y: -50 }}
       animate={{ y: 0 }}
@@ -27,26 +27,37 @@ export default function Navbar() {
     >
       <div className="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
         <Link href="/">
-          <span className={`text-xl font-bold ${scrolled ? "text-black" : ""}`}>
-            Plannorium
-          </span>
+          {/* Logo text consistently white/light */}
+          <span className="text-xl font-bold text-white">Plannorium</span>
         </Link>
         <div className="space-x-6">
           <Link
-            href="/portfolio"
-            className="text-gray-600 hover:text-black transition"
+            href="/#portfolio"
+            className={`font-medium transition-colors duration-200 ${
+              scrolled
+                ? "text-gray-300 hover:text-white"
+                : "text-gray-300 hover:text-white"
+            }`}
           >
             Portfolio
           </Link>
           <Link
-            href="/about"
-            className="text-gray-600 hover:text-black transition"
+            href="/#about"
+            className={`font-medium transition-colors duration-200 ${
+              scrolled
+                ? "text-gray-300 hover:text-white"
+                : "text-gray-300 hover:text-white"
+            }`}
           >
             About
           </Link>
           <Link
-            href="/contact"
-            className="text-gray-600 hover:text-black transition"
+            href="/#contact-section"
+            className={`font-medium transition-colors duration-200 ${
+              scrolled
+                ? "text-gray-300 hover:text-white"
+                : "text-gray-300 hover:text-white"
+            }`}
           >
             Contact
           </Link>
