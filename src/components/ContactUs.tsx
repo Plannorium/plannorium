@@ -3,13 +3,13 @@
 import { motion } from "framer-motion";
 import {
   Mail,
-  MessageCircle,
   //   Linkedin,
   //   Instagram,
   //   Twitter,
   CalendarDays,
 } from "lucide-react";
 import Link from "next/link";
+import WhatsAppIcon from "./icons/WhatsAppIcon";
 
 const sectionVariants = {
   hidden: { opacity: 0, y: 50 },
@@ -34,9 +34,9 @@ const contactMethods = [
   },
   {
     name: "WhatsApp",
-    value: "+123 456 7890",
-    href: "https://wa.me/1234567890",
-    icon: MessageCircle,
+    value: "+2348068926547",
+    href: "https://wa.me/+2348068926547",
+    icon: WhatsAppIcon, // Use the new WhatsAppIcon
   },
 ];
 
