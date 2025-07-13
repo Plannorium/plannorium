@@ -15,12 +15,16 @@ body {
 
 /* Landing */
 
+.o-class {
+  @apply mr-5;
+}
+
 .text {
   @apply font-medium tracking-[-5%];
 }
 
 .button {
-  @apply text-[25px] font-medium cursor-pointer tracking-[-5%];
+  @apply text-[20px] md:text-[23px] xl:text-[25px] font-medium cursor-pointer tracking-[-5%];
 }
 
 .button-full {
@@ -51,7 +55,7 @@ body {
 /* About */
 
 .box {
-  @apply max-w-[700px] ml-8 tracking-[-5%];
+  @apply max-w-[700px] ml-2 xl:ml-8 tracking-[-5%] mt-10 sm:mt-20 lg:mt-0;
 }
 
 .box p,
@@ -60,6 +64,7 @@ body {
   font-size: 30px;
   gap: 8px;
   line-height: 150%;
+  @apply lg:text-[30px] text-[25px];
 }
 
 .box p span,
@@ -84,10 +89,6 @@ body {
 
 .circle {
   position: absolute;
-  top: 140%;
-  left: calc(100% - 500px);
-  width: 312px;
-  height: 312px;
   background-color: #0000a3;
   color: white;
   border-radius: 50%;
@@ -95,11 +96,11 @@ body {
   align-items: center;
   justify-content: center;
   cursor: pointer;
+  @apply xl:w-[312px] xl:h-[312px] lg:w-[250px] lg:h-[250px] w-[180px] h-[180px] xl:top-[140%] xl:left-[calc(100%-500px)] lg:top-[150%] lg:left-[calc(100%-300px)] top-[153%] left-2;
 }
 
 .circle p {
   margin: 0;
-  font-size: 40px;
   font-weight: 700;
   position: relative;
   z-index: 1;
@@ -107,6 +108,7 @@ body {
   word-spacing: -5%;
   text-align: center;
   justify-content: center;
+  @apply xl:text-[40px] lg:text-[25px] text-[20px];
 }
 
 /* Work */
@@ -132,7 +134,7 @@ body {
 }
 
 .margin-left-bottom {
-  @apply ml-4.5;
+  @apply ml-[18px];
 }
 
 .grid-container {
@@ -142,6 +144,7 @@ body {
   gap: 20px;
   max-width: 1200px;
   width: 100%;
+  margin-left: 2.5vw;
 }
 
 .large {
@@ -166,10 +169,76 @@ body {
 
 .grid-item {
   transform: scale(1);
-  transition: 0.2s linear;
+  transition: 0.3s linear;
 }
 
 .grid-item:hover {
   transform: scale(1.03);
-  transition: 0.2s linear;
+  transition: 0.3s linear;
+}
+
+/* Services */
+
+.services-section {
+  @apply bg-white z-2 relative;
+}
+
+.services-heading {
+  @apply uppercase text-[150px] font-semibold ml-6 mt-30 tracking-[-5%];
+}
+
+.services-box {
+  @apply mt-4;
+}
+
+.items {
+  @apply mt-40 text-[30px] font-medium tracking-[-5%] relative;
+}
+
+.item {
+  @apply flex justify-between items-center py-[50px] relative;
+}
+
+.item p {
+  @apply ml-8;
+}
+
+.border-line {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 2px;
+  width: 100%;
+  background: black;
+  transform-origin: left center;
+}
+
+.top-border {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 2px;
+  width: 100%;
+  background: black;
+  transform-origin: left center;
+}
+
+.item img {
+  @apply mr-8;
+}
+
+.circleContainer {
+  position: relative;
+  margin-top: 100px;
+}
+
+.circle-services {
+  height: 1550%;
+  width: 120%;
+  left: -10%;
+  border-radius: 0 0 50% 50%;
+  background-color: white;
+  z-index: 1;
+  position: absolute;
+  box-shadow: 0px 60px 50px rgba(0, 0, 0, 0.748);
 }

@@ -4,10 +4,9 @@ import styles from "./style.module.scss"
 export default function index() {
   return (
     <div className={styles.footer}>
-      <Link href="#">Awwwards</Link>
-      <Link href="#">Instagram</Link>
-      <Link href="#">Dribble</Link>
-      <Link href="#">LinkedIn</Link>
+      <Link href="https://linkedin.com/company/plannorium">LinkedIn</Link>
+      <Link href="https://instagram.com/plannorium">Instagram</Link>
+      <Link href="https://x.com/plannorium">Twitter</Link>
     </div>
   )
 }

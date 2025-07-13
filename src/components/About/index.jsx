@@ -12,9 +12,9 @@ export default function index() {
   const isInView2 = useInView(description2)
 
   return (
-    <section className="min-h-screen">
+    <section className="min-h-screen" id="about">
       <div className="box">
-        <h2 className="uppercase text-[150px] font-semibold">about</h2>
+        <h2 className="uppercase text-[60px] lg:text-[100px] xl:text-[150px] font-semibold">about</h2>
         <p ref={description1} className="text-[30px] leading-[150%] font-medium">
           {phrase1.split(" ").map((word, index) => {
             return (
@@ -29,7 +29,18 @@ export default function index() {
       </div>
 
       <Rounded className="circle">
-        <p>Have questions? Let’s talk</p>
+        <p
+          onClick={() => {
+            const contactSection = document.querySelector("#contact")
+            if (contactSection) {
+              const yOffset = 500
+              const y = contactSection.getBoundingClientRect().top + window.pageYOffset + yOffset
+              window.scrollTo({ top: y, behavior: "smooth" })
+            }
+          }}
+        >
+          Have questions? Let’s talk
+        </p>
       </Rounded>
 
       <div className="second-box">

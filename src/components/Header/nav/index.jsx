@@ -10,15 +10,15 @@ import Footer from "./Footer"
 const navItems = [
   {
     title: "Home",
-    href: "/"
+    href: "#home"
   },
   {
     title: "About",
-    href: "/about"
+    href: "#about"
   },
   {
     title: "Work",
-    href: "/work"
+    href: "#work"
   }
 ]
 

@@ -1,6 +1,6 @@
 "use client"
 import { useEffect, useLayoutEffect, useRef, useState } from "react"
-import styles from "./style.module.scss"
+import styles from "./style.module.css"
 import { usePathname } from "next/navigation"
 import { AnimatePresence } from "framer-motion"
 import Nav from "./nav"
@@ -42,21 +42,45 @@ export default function index() {
         <div className={styles.nav}>
           <Magnetic>
             <div className={styles.el}>
-              <a href="#">Home</a>
+              <a href="#home">Home</a>
               <div className={styles.indicator}></div>
             </div>
           </Magnetic>
 
           <Magnetic>
             <div className={styles.el}>
-              <a href="#">About</a>
+              <a
+                href="#about"
+                onClick={e => {
+                  e.preventDefault()
+                  const about = document.querySelector("#about")
+                  if (about) {
+                    const y = about.getBoundingClientRect().top + window.pageYOffset
+                    window.scrollTo({ top: y, behavior: "smooth" })
+                  }
+                }}
+              >
+                About
+              </a>
               <div className={styles.indicator}></div>
             </div>
           </Magnetic>
 
           <Magnetic>
             <div className={styles.el}>
-              <a href="#">Work</a>
+              <a
+                href="#work"
+                onClick={e => {
+                  e.preventDefault()
+                  const work = document.querySelector("#work")
+                  if (work) {
+                    const y = work.getBoundingClientRect().top + window.pageYOffset
+                    window.scrollTo({ top: y, behavior: "smooth" })
+                  }
+                }}
+              >
+                Work
+              </a>
               <div className={styles.indicator}></div>
             </div>
           </Magnetic>

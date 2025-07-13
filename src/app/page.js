@@ -4,6 +4,7 @@ import Landing from "../components/Landing"
 import About from "../components/About"
 import Work from "../components/Work"
 import Services from "../components/Services"
+import Footer from "../components/Footer"
 
 export default function Home() {
   useEffect(() => {
@@ -18,7 +19,8 @@ export default function Home() {
       <Landing />
       <About />
       <Work />
-      {/* <Services /> */}
+      <Services />
+      <Footer />
     </main>
   )
 }
