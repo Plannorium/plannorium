@@ -57,23 +57,26 @@ const index = () => {
           </div>
         </div>
       </div>
+
+      <div className="responsive-grid flex flex-col gap-10 2xl:hidden">
+        <div className="w-full h-full flex items-center justify-center">
+          <Image className="grid-item border-15 border-[#E9DED9] w-[402px] sm:w-[65vw]" src="/images/work-2.png" width={402} height={0} alt="image" />
+        </div>
+
+        <div className="w-full h-full flex items-center justify-center">
+          <Image className="grid-item border-15 border-[#E9DED9] w-[402px] sm:w-[65vw]" src="/images/work-3.png" width={402} height={0} alt="image" />
+        </div>
+
+        <div className="w-full h-full flex items-center justify-center">
+          <Image className="grid-item border-15 border-[#E9DED9] w-[402px] sm:w-[65vw]" src="/images/work-6.png" width={402} height={0} alt="image" />
+        </div>
+
+        <div className="w-full h-full flex items-center justify-center">
+          <Image className="grid-item border-15 border-[#E9DED9] w-[402px] sm:w-[65vw]" src="/images/work-5.png" width={402} height={0} alt="image" />
+        </div>
+      </div>
     </section>
   )
 }
 
 export default index
-
-// @media (max-width: 768px) {
-//   .grid-container {
-//     grid-template-columns: 1fr;
-//     grid-template-rows: auto auto auto;
-//   }
-//   .grid-item.large,
-//   .grid-item.top-right,
-//   .grid-item.bottom-row {
-//     grid-column: 1 / 2;
-//   }
-//   .grid-item.bottom-row {
-//     grid-template-columns: 1fr;
-//   }
-// }

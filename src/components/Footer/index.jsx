@@ -1,4 +1,4 @@
-import styles from "./style.module.scss"
+import styles from "./style.module.css"
 import Image from "next/image"
 import Rounded from "../../common/RoundedButton"
 import { useRef } from "react"
@@ -24,11 +24,11 @@ export default function index() {
             <div className={styles.imageContainer}>
               <Image fill={true} alt={"image"} src={`/images/logo.png`} />
             </div>
-            <h2 className="font-semibold text-[80px] tracking-[-5%]">Let’s Work Together</h2>
+            <h2 className="font-semibold text-[30px] md:text-[50px] xl:text-[80px] tracking-[-5%]">Let’s Work Together</h2>
           </span>
           <motion.div style={{ x }} className={styles.buttonContainer}>
             <Rounded className={styles.button}>
-              <p onClick={() => (window.location.href = "https://wa.me/2348068926547")} className="font-medium tracking-[-5%] text-[30px]">
+              <p onClick={() => (window.location.href = "https://wa.me/2348068926547")} className="font-medium tracking-[-5%] text-[15px] md:text-[25px] 2xl:text-[30px]">
                 Get In Touch
               </p>
             </Rounded>
@@ -37,12 +37,12 @@ export default function index() {
 
         <div className={styles.nav}>
           <Rounded backgroundColor={"#0000A3"}>
-            <p onClick={() => (window.location.href = "mailto:hello@plannorium.com")} className="font-medium tracking-[-5%] text-[25px]">
+            <p onClick={() => (window.location.href = "mailto:hello@plannorium.com")} className="font-medium tracking-[-5%] text-[16px] md:text-[25px]">
               hello@plannorium.com
             </p>
           </Rounded>
           <Rounded backgroundColor={"#0000A3"}>
-            <p onClick={() => (window.location.href = "https://wa.me/2348068926547")} className="font-medium tracking-[-5%] text-[25px]">
+            <p onClick={() => (window.location.href = "https://wa.me/2348068926547")} className="font-medium tracking-[-5%] text-[16px] md:text-[25px]">
               +23 4 80 68 92 65 47
             </p>
           </Rounded>
@@ -59,6 +59,7 @@ export default function index() {
           <div>
             <span>
               <h3>socials</h3>
+              <div></div>
               <Magnetic>
                 <p onClick={() => (window.location.href = "https://linkedin.com/company/plannorium")}>LinkedIn</p>
               </Magnetic>

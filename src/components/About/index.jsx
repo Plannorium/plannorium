@@ -44,7 +44,7 @@ export default function index() {
       </Rounded>
 
       <div className="second-box">
-        <h2 className="uppercase text-[80px] font-semibold">our process</h2>
+        <h2 className="uppercase text-[45px] lg:text-[60px] xl:text-[80px] font-semibold">our process</h2>
         <p ref={description2} className="text-[30px] leading-[150%] font-medium">
           {phrase2.split(" ").map((word, index) => {
             return (

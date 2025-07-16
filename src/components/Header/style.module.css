@@ -75,6 +75,13 @@
   justify-content: center;
 }
 
+@media (max-width: 640px) {
+  .headerButtonContainer .button {
+    width: 70px;
+    height: 70px;
+  }
+}
+
 .headerButtonContainer .burger {
   width: 100%;
   position: relative;

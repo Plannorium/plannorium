@@ -1,5 +1,5 @@
 import React from "react"
-import { slideUp, opacity } from "./animation"
+import { slideUp } from "./animation"
 import { useInView, motion, useTransform, useScroll } from "framer-motion"
 import { useRef } from "react"
 import Image from "next/image"
