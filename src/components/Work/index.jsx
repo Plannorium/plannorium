@@ -8,7 +8,7 @@ const index = () => {
   const isInView = useInView(works)
 
   return (
-    <section className="min-h-screen" id="work">
+    <section className="work min-h-screen" id="work">
       <h2 className="work-heading">work</h2>
 
       <div ref={works} className="grid-container">

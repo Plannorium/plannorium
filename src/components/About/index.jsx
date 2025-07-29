@@ -12,7 +12,7 @@ export default function index() {
   const isInView2 = useInView(description2)
 
   return (
-    <section className="min-h-screen" id="about">
+    <section className="about min-h-screen" id="about">
       <div className="box">
         <h2 className="uppercase text-[60px] lg:text-[100px] xl:text-[150px] font-semibold">about</h2>
         <p ref={description1} className="text-[30px] leading-[150%] font-medium">

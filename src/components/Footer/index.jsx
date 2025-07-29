@@ -28,7 +28,7 @@ export default function index() {
           </span>
           <motion.div style={{ x }} className={styles.buttonContainer}>
             <Rounded className={styles.button}>
-              <p onClick={() => (window.location.href = "https://wa.me/2348068926547")} className="font-medium tracking-[-5%] text-[15px] md:text-[25px] 2xl:text-[30px]">
+              <p onClick={() => (window.location.href = "https://wa.me/2348068926547")} className="font-medium tracking-[-5%] text-[16px] md:text-[20px] lg:text-[25px]">
                 Get In Touch
               </p>
             </Rounded>
@@ -37,12 +37,12 @@ export default function index() {
 
         <div className={styles.nav}>
           <Rounded backgroundColor={"#0000A3"}>
-            <p onClick={() => (window.location.href = "mailto:hello@plannorium.com")} className="font-medium tracking-[-5%] text-[16px] md:text-[25px]">
+            <p onClick={() => (window.location.href = "mailto:hello@plannorium.com")} className="font-medium tracking-[-5%] text-[15px] md:text-[20px] lg:text-[25px]">
               hello@plannorium.com
             </p>
           </Rounded>
           <Rounded backgroundColor={"#0000A3"}>
-            <p onClick={() => (window.location.href = "https://wa.me/2348068926547")} className="font-medium tracking-[-5%] text-[16px] md:text-[25px]">
+            <p onClick={() => (window.location.href = "https://wa.me/2348068926547")} className="font-medium tracking-[-5%] text-[15px] md:text-[20px] lg:text-[25px]">
               +23 4 80 68 92 65 47
             </p>
           </Rounded>

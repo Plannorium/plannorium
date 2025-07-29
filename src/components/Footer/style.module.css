@@ -190,7 +190,7 @@
 
 @media (max-width: 1024px) {
   .contact .body {
-    padding-top: 300px;
+    padding-top: 250px;
   }
 
   .contact .body .title {
@@ -229,7 +229,7 @@
 
 @media (max-width: 640px) {
   .contact .body {
-    padding-top: 300px;
+    padding-top: 200px;
   }
 
   .contact .body .title {
@@ -250,6 +250,10 @@
   .contact .body .title .button {
     width: 120px;
     height: 120px;
+  }
+
+  .contact .body .title .buttonContainer {
+    left: calc(100% - 300px);
   }
 
   .contact .body .nav {
