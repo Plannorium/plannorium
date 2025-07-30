@@ -50,7 +50,7 @@ html {
 }
 
 .button {
-  @apply text-[18px] lg:text-[23px] xl:text-[25px] font-medium cursor-pointer tracking-[-5%];
+  @apply text-[16px] lg:text-[23px] xl:text-[25px] font-medium cursor-pointer tracking-[-5%];
 }
 
 .button-full {
