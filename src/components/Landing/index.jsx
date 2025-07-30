@@ -18,10 +18,10 @@ const index = () => {
         <p className="2xl:text-[30px] text-[25px]">Pioneering Digital Excellence</p>
       </div>
 
-      <div className="text-landing absolute left-2 lg:left-[57%] top-[58%] sm:top-[65%] md:top-[75%] lg:top-[40%]">
+      <div className="text-landing absolute left-2 lg:left-[57%] top-[55%] sm:top-[65%] md:top-[75%] lg:top-[40%]">
         <p className="text-[20px] lg:text-[23px] xl:text-[30px] text max-w-[300px] lg:max-w-145">We design and develop modern websites, digital platforms, and interactive experiences for visionary brands.</p>
 
-        <div className="flex absolute top-[125%] xl:top-[120%] gap-10 z-50">
+        <div className="flex absolute top-[125%] xl:top-[120%] gap-8 sm:gap-10 z-50">
           <Magnetic>
             <button
               className="button button-full"
@@ -34,7 +34,7 @@ const index = () => {
                 }
               }}
             >
-              see our projects
+              See our projects
             </button>
           </Magnetic>
           <button
@@ -49,7 +49,7 @@ const index = () => {
               }
             }}
           >
-            contact us
+            Contact us
           </button>
         </div>
       </div>
