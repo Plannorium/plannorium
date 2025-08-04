@@ -11,17 +11,17 @@ const index = () => {
         PLANN<span className="text-[#0000A3] font-bold italic o-class">O</span>RIUM
       </h1>
 
-      <div className="pic absolute top-[15%] sm:top-[20%] md:top-[21%] lg:top-[35%] w-[full] h-[250px] md:w-[725px] md:h-[330px] lg:w-[47vw] lg:h-[23vw] bg-[#0000a3]">
+      <div className="pic absolute top-[15%] sm:top-[20%] md:top-[21%] lg:top-[35%] w-full h-[200px] md:w-[725px] md:h-[330px] lg:w-[47vw] lg:h-[23vw] bg-[#0000a3]">
         <div className="w-full h-full flex items-center justify-center">
-          <Image src="/images/landing-image.png" width={579} height={0} alt="image" className="w-[425px] md:w-[579px] lg:w-[40vw]" />
+          <Image src="/images/landing-image.png" width={579} height={0} alt="image" className="w-[350px] md:w-[579px] lg:w-[40vw]" />
         </div>
         <p className="2xl:text-[30px] text-[25px]">Pioneering Digital Excellence</p>
       </div>
 
-      <div className="text-landing absolute left-2 lg:left-[57%] top-[58%] sm:top-[65%] md:top-[75%] lg:top-[40%]">
-        <p className="text-[20px] lg:text-[23px] xl:text-[30px] text max-w-100 lg:max-w-145">We design and develop modern websites, digital platforms, and interactive experiences for visionary brands.</p>
+      <div className="text-landing absolute left-2 lg:left-[57%] top-[55%] sm:top-[65%] md:top-[75%] lg:top-[40%]">
+        <p className="text-[20px] lg:text-[23px] xl:text-[30px] text max-w-[330px] lg:max-w-145">We design and develop modern websites, digital platforms, and interactive experiences for visionary brands.</p>
 
-        <div className="flex absolute top-[125%] xl:top-[120%] gap-10 z-50">
+        <div className="flex absolute top-[125%] xl:top-[120%] gap-8 sm:gap-10 z-50">
           <Magnetic>
             <button
               className="button button-full"
@@ -34,7 +34,7 @@ const index = () => {
                 }
               }}
             >
-              see our projects
+              See our projects
             </button>
           </Magnetic>
           <button
@@ -49,7 +49,7 @@ const index = () => {
               }
             }}
           >
-            contact us
+            Contact us
           </button>
         </div>
       </div>

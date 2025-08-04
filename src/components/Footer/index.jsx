@@ -58,7 +58,7 @@ export default function index() {
 
           <div>
             <span>
-              <h3>socials</h3>
+              <h3>Socials</h3>
               <div></div>
               <Magnetic>
                 <p onClick={() => (window.location.href = "https://linkedin.com/company/plannorium")}>LinkedIn</p>
