@@ -28,8 +28,8 @@ export default function index() {
           </span>
           <motion.div style={{ x }} className={styles.buttonContainer}>
             <Rounded className={styles.button}>
-              <p onClick={() => (window.location.href = "https://wa.me/2348068926547")} className="font-medium tracking-[-5%] text-[16px] md:text-[20px] lg:text-[25px]">
-                Get In Touch
+              <p onClick={() => (window.location.href = "http://calendly.com/team-plannorium_")} className="font-medium tracking-[-5%] text-[16px] md:text-[20px] lg:text-[25px]">
+                Book a Call
               </p>
             </Rounded>
           </motion.div>
@@ -52,7 +52,7 @@ export default function index() {
           <div>
             <span>
               <h3>Version</h3>
-              <p>2025 © Fateme Adiban</p>
+              <p onClick={() => (window.location.href = "https://fateme-adiban.vercel.app/")}>2025 © Fateme Adiban</p>
             </span>
           </div>
 
@@ -66,11 +66,11 @@ export default function index() {
             </span>
 
             <Magnetic>
-              <p onClick={() => (window.location.href = "https://instagram.com/plannorium")}>Instagram</p>
+              <p onClick={() => (window.location.href = "https://www.instagram.com/plannorium?igsh=YW10NTU2cWU4c24z")}>Instagram</p>
             </Magnetic>
 
             <Magnetic>
-              <p onClick={() => (window.location.href = "https://x.com/plannorium")}>Twitter</p>
+              <p onClick={() => (window.location.href = "https://x.com/plannorium?t=U4112cvWrn8YznM9wZZ8sg&s=09")}>Twitter</p>
             </Magnetic>
           </div>
         </div>

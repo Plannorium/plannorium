@@ -29,18 +29,7 @@ export default function index() {
       </div>
 
       <Rounded className="circle">
-        <p
-          onClick={() => {
-            const contactSection = document.querySelector("#contact")
-            if (contactSection) {
-              const yOffset = 500
-              const y = contactSection.getBoundingClientRect().top + window.pageYOffset + yOffset
-              window.scrollTo({ top: y, behavior: "smooth" })
-            }
-          }}
-        >
-          Have questions? Let’s talk
-        </p>
+        <p onClick={() => (window.location.href = "http://calendly.com/team-plannorium_")}>Have questions? Let’s talk</p>
       </Rounded>
 
       <div className="second-box">
