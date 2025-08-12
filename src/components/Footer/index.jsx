@@ -38,7 +38,7 @@ export default function index() {
               <p
                 onClick={() =>
                   (window.location.href =
-                    "http://calendly.com/team-plannorium_")
+                    "https://calendly.com/team-plannorium_/30min")
                 }
                 className="font-medium tracking-[-5%] text-[16px] md:text-[20px] lg:text-[25px]"
               >
