@@ -144,6 +144,10 @@
   font-size: 18px;
 }
 
+.contact .body .info div:last-child {
+  margin-right: 150px;
+}
+
 /* -------------------------------------------
    TABLET RESPONSIVE: ≤ 1280px
 -------------------------------------------- */
