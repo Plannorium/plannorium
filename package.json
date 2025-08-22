@@ -14,10 +14,7 @@
     "locomotive-scroll": "^5.0.0-beta.8",
     "next": "15.3.4",
     "posthog-js": "^1.260.1",
-<<<<<<< HEAD
-=======
     "posthog-node": "^5.7.0",
->>>>>>> beb2a8c1a0bdb083859c6a12f23cee3fd50f9411
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "sass": "^1.64.0",
