@@ -1,6 +1,6 @@
 import "./globals.css";
 import { Inter } from "next/font/google";
-import PosthogPageView from "../components/PosthogPageView";
+import { PHProvider, PostHogPageview } from "./providers";
 
 const inter = Inter({
   weight: "400",
@@ -32,13 +32,6 @@ export const metadata = {
     "وكالة براندنج الرياض",
   ],
   referrer: "origin-when-cross-origin",
-  themeColor: "#000000",
-  colorScheme: "dark",
-  viewport: {
-    width: "device-width",
-    initialScale: 1,
-    maximumScale: 1,
-  },
   creator: "Plannorium",
   publisher: "Plannorium",
   robots: {
@@ -91,12 +84,21 @@ export const metadata = {
   },
 };
 
+export const viewport = {
+  themeColor: "#000000",
+  width: "device-width",
+  initialScale: 1,
+  maximumScale: 1,
+};
+
 export default function RootLayout({ children }) {
   return (
     <html lang="en" className={inter.className}>
-      <body className={`antialiased`}>
-        <PosthogPageView />
-        {children}
+      <body>
+        <PHProvider>
+          <PostHogPageview />
+          {children}
+        </PHProvider>
       </body>
     </html>
   );
