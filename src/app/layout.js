@@ -55,7 +55,7 @@ export const metadata = {
     siteName: "Plannorium",
     images: [
       {
-        url: "https://plannorium.com/og-image.png",
+        url: "https://res.cloudinary.com/dnkynww4m/image/upload/v1755970105/plannorium_logo_png_lpc0p5.png",
         width: 1200,
         height: 630,
         alt: "Plannorium - Software Development & Creative Design",
@@ -70,7 +70,9 @@ export const metadata = {
       "Plannorium | Software Development & Creative Design in Saudi Arabia",
     description:
       "Top-tier software development, web design, and branding services in Riyadh, Saudi Arabia, and the GCC. We build innovative digital solutions for businesses.",
-    images: ["https://plannorium.com/og-image.png"],
+    images: [
+      "https://res.cloudinary.com/dnkynww4m/image/upload/v1755970105/plannorium_logo_png_lpc0p5.png",
+    ],
     creator: "@plannorium",
   },
   verification: {
@@ -104,7 +106,7 @@ export default function RootLayout({ children }) {
               "@type": "Organization",
               name: "Plannorium",
               url: "https://plannorium.com",
-              logo: "https://plannorium.com/og-image.png",
+              logo: "https://res.cloudinary.com/dnkynww4m/image/upload/v1755970105/plannorium_logo_png_lpc0p5.png",
               sameAs: ["https://twitter.com/plannorium"],
             }),
           }}
