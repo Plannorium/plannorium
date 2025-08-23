@@ -95,6 +95,21 @@ export const viewport = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en" className={inter.className}>
+      <head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "Organization",
+              name: "Plannorium",
+              url: "https://plannorium.com",
+              logo: "https://plannorium.com/og-image.png",
+              sameAs: ["https://twitter.com/plannorium"],
+            }),
+          }}
+        />
+      </head>
       <body>
         <PHProvider>
           <Suspense>
