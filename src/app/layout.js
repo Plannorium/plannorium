@@ -1,5 +1,6 @@
 import "./globals.css";
 import { Inter } from "next/font/google";
+import { Suspense } from "react";
 import { PHProvider, PostHogPageview } from "./providers";
 
 const inter = Inter({
@@ -96,7 +97,9 @@ export default function RootLayout({ children }) {
     <html lang="en" className={inter.className}>
       <body>
         <PHProvider>
-          <PostHogPageview />
+          <Suspense>
+            <PostHogPageview />
+          </Suspense>
           {children}
         </PHProvider>
       </body>
