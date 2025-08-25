@@ -46,11 +46,11 @@ html {
 }
 
 .text {
-  @apply font-medium tracking-[-5%];
+  @apply tracking-[-5%];
 }
 
 .button {
-  @apply text-[16px] lg:text-[23px] xl:text-[25px] font-medium cursor-pointer tracking-[-5%];
+  @apply text-[16px] lg:text-[23px] xl:text-[25px] font-normal cursor-pointer tracking-[-5%];
 }
 
 .button-full {
