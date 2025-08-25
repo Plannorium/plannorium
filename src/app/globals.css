@@ -46,11 +46,11 @@ html {
 }
 
 .text {
-  @apply font-medium tracking-[-5%];
+  @apply font-normal tracking-[-5%];
 }
 
 .button {
-  @apply text-[16px] lg:text-[23px] xl:text-[25px] font-medium cursor-pointer tracking-[-5%];
+  @apply text-[16px] lg:text-[23px] xl:text-[25px] font-normal cursor-pointer tracking-[-5%];
 }
 
 .button-full {
@@ -137,7 +137,7 @@ html {
   align-items: center;
   justify-content: center;
   cursor: pointer;
-  @apply xl:w-[312px] xl:h-[312px] lg:w-[250px] lg:h-[250px] xl:flex w-[180px] h-[180px] xl:top-[140%] xl:left-[calc(100%-500px)] lg:top-[150%] lg:left-[calc(100%-300px)] hidden top-[153%] left-2;
+  @apply xl:w-[312px] xl:h-[312px] lg:w-[250px] lg:h-[250px] xl:flex w-[180px] h-[180px] xl:top-[140%] xl:left-[calc(100%-500px)] lg:top-[150%] lg:left-[calc(100%-300px)] hidden top-[153%] left-2 font-normal;
 }
 
 .circle p {

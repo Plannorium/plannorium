@@ -25,6 +25,8 @@
 }
 
 .header .nav .el {
+  font-weight: 400;
+  font-size: 21px;
   display: flex;
   flex-direction: column;
   position: relative;
