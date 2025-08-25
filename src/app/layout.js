@@ -1,14 +1,11 @@
 import "./globals.css";
 import { Inter } from "next/font/google";
 import { Suspense } from "react";
-import Script from "next/script";
 import { PHProvider, PostHogPageview } from "./providers";
 
 const inter = Inter({
+  weight: "400",
   subsets: ["latin"],
-  weight: ["400"],
-  display: "swap",
-  variable: "--font-inter",
 });
 
 export const metadata = {
@@ -99,7 +96,7 @@ export const viewport = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" className={`${inter.variable}`}>
+    <html lang="en" className={inter.className}>
       <head>
         <script
           type="application/ld+json"
@@ -114,13 +111,8 @@ export default function RootLayout({ children }) {
             }),
           }}
         />
-        <Script src="https://cdn.botpress.cloud/webchat/v3.2/inject.js"></Script>
-        <Script
-          src="https://files.bpcontent.cloud/2025/08/18/12/20250818125118-RTXGWAFW.js"
-          defer
-        ></Script>
       </head>
-      <body className={`antialiased font-inter`}>
+      <body>
         <PHProvider>
           <Suspense>
             <PostHogPageview />
