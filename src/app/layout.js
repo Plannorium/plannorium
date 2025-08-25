@@ -114,11 +114,11 @@ export default function RootLayout({ children }) {
             }),
           }}
         />
-        <Script src="https://cdn.botpress.cloud/webchat/v3.2/inject.js" />
+        <Script src="https://cdn.botpress.cloud/webchat/v3.2/inject.js"></Script>
         <Script
           src="https://files.bpcontent.cloud/2025/08/18/12/20250818125118-RTXGWAFW.js"
           defer
-        />
+        ></Script>
       </head>
       <body className={`antialiased font-inter`}>
         <PHProvider>

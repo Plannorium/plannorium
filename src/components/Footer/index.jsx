@@ -40,7 +40,7 @@ export default function index() {
                   (window.location.href =
                     "https://calendly.com/team-plannorium_/30min")
                 }
-                className="font-medium tracking-[-5%] text-[16px] md:text-[20px] lg:text-[25px]"
+                className="tracking-[-5%] text-[16px] md:text-[20px] lg:text-[26.5px] font-normal"
               >
                 Book a Call
               </p>
@@ -54,7 +54,7 @@ export default function index() {
               onClick={() =>
                 (window.location.href = "mailto:info@plannorium.com")
               }
-              className="font-medium tracking-[-5%] text-[15px] md:text-[20px] lg:text-[25px]"
+              className="tracking-[-5%] text-[15px] md:text-[20px] lg:text-[25px] font-normal"
             >
               info@plannorium.com
             </p>
@@ -64,7 +64,7 @@ export default function index() {
               onClick={() =>
                 (window.location.href = "https://wa.me/2348068926547")
               }
-              className="font-medium tracking-[-5%] text-[15px] md:text-[20px] lg:text-[25px]"
+              className="tracking-[-5%] text-[15px] md:text-[20px] lg:text-[25px] font-normal"
             >
               +23 4 80 68 92 65 47
             </p>
